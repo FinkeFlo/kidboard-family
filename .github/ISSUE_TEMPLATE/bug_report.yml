@@ -1,0 +1,69 @@
+name: Bug report / Fehlerbericht
+description: Something does not work as expected / Etwas funktioniert nicht wie erwartet
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! English or German is fine. / Danke für deine Hilfe! Englisch oder Deutsch ist beides okay.
+
+        **Never paste your secret iCal URL, access token or any `.dev.vars` content.** / **Füge niemals deine geheime iCal-URL, dein Zugriffstoken oder Inhalte aus `.dev.vars` ein.**
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Checks / Prüfungen
+      options:
+        - label: I searched existing issues. / Ich habe bestehende Issues durchsucht.
+          required: true
+        - label: This report contains no secrets or private calendar data. / Dieser Bericht enthält keine Geheimnisse oder privaten Kalenderdaten.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description / Beschreibung
+      description: What happened? / Was ist passiert?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / Erwartetes Verhalten
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Schritte zur Reproduktion
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: title-example
+    attributes:
+      label: Example calendar title (optional) / Beispiel-Kalendertitel (optional)
+      description: The raw event title, if it is about title parsing. Do not include private details. / Der rohe Termintitel, falls es um das Parsen geht. Keine privaten Details.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / Bereich
+      options:
+        - Web app (UI) / Web-App (UI)
+        - Worker / API
+        - Calendar parsing / Kalender-Parsing
+        - Kiosk / PWA / offline
+        - Documentation / Dokumentation
+        - Other / Sonstiges
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Device and browser / Gerät und Browser
+      placeholder: "e.g. Fully Kiosk 1.5x on Android 14 tablet, Chrome 13x"
+  - type: input
+    id: version
+    attributes:
+      label: KidBoard version or commit / KidBoard-Version oder Commit

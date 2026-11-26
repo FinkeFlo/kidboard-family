@@ -1,0 +1,8 @@
+BEGIN:VCALENDAR
+PRODID:-//KidBoard//Synthetic Fixture empty//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:KidBoard fixture empty
+X-WR-TIMEZONE:Europe/Berlin
+END:VCALENDAR

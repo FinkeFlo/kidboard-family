@@ -1,0 +1,65 @@
+{
+  "name": "kidboard-family",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Icon-first family calendar and meal plan for a wall-mounted kiosk tablet.",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/ensure-web-dist.mjs && pnpm --parallel --filter @kidboard/web --filter @kidboard/worker dev",
+    "build": "pnpm --filter @kidboard/web build && pnpm --filter @kidboard/worker build",
+    "deploy:cloudflare": "pnpm --filter @kidboard/web build && wrangler deploy",
+    "lint": "eslint --max-warnings=0 .",
+    "typecheck": "tsc -p tsconfig.json && pnpm -r --workspace-concurrency=1 typecheck",
+    "test": "vitest run",
+    "test:e2e": "pnpm --filter @kidboard/web test:e2e",
+    "dev:demo": "pnpm --filter @kidboard/web dev:demo",
+    "screenshots": "pnpm --filter @kidboard/web screenshots",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "node -e \"process.exit(require('fs').existsSync('.git')?0:1)\" && lefthook install || echo \"skipping lefthook install\""
+  },
+  "cloudflare": {
+    "bindings": {
+      "KIDBOARD_ACCESS_TOKEN": {
+        "description": "Required: 32 to 256 random letters and digits (no spaces or symbols), e.g. 40 characters; without a valid one the board refuses every request. The editor needs it. Open the board once with `?key=<token>` at the end of its address."
+      },
+      "KIDBOARD_PARENT_PIN": {
+        "description": "A PIN of 6 to 12 digits that unlocks the editor for parents (no repeated digit like 111111 and no run like 123456 or 987654). Without it the board stays read-only."
+      },
+      "KIDBOARD_CONFIG": {
+        "description": "Your children and settings as one line of JSON: change the example names, colours and emojis. Google calendars can be added later ([docs/CONFIG.md](https://github.com/FinkeFlo/kidboard/blob/main/docs/CONFIG.md))."
+      },
+      "KIDBOARD_CACHE": {
+        "description": "Storage for the calendar cache, created automatically. Keep the default."
+      },
+      "KIDBOARD_DATA": {
+        "description": "Database for the entries made in the editor, created automatically. Keep the default."
+      }
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "catalog:",
+    "eslint": "^9.39.5",
+    "eslint-plugin-i18next": "^6.1.5",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-simple-import-sort": "^14.0.0",
+    "globals": "^17.14.0",
+    "lefthook": "^2.2.2",
+    "prettier": "^3.10.1",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "typescript": "catalog:",
+    "typescript-eslint": "^8.73.0",
+    "vitest": "^5.1.1",
+    "wrangler": "^4.166.0"
+  }
+}

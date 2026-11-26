@@ -1,0 +1,492 @@
+{
+  "error": {
+    "title": "Gleich geht's weiter",
+    "hint": "Eltern: Etwas ist schiefgelaufen. KidBoard startet gleich von selbst neu.",
+    "retry": "Jetzt neu laden",
+    "code": "Fehlercode für Eltern: {{code}}"
+  },
+  "event": {
+    "allDay": "Ganztägig",
+    "status": {
+      "past": "Schon vorbei",
+      "current": "Gerade jetzt",
+      "next": "Als Nächstes"
+    },
+    "forEveryone": "Für alle",
+    "continues": "Geht weiter",
+    "forChildren": "Für {{names, list}}",
+    "moreChildren": "+{{count}}",
+    "bring": "Mitbringen: {{icons}}"
+  },
+  "meal": {
+    "slot": {
+      "breakfast": "Frühstück",
+      "lunch": "Mittagessen",
+      "dinner": "Abendessen",
+      "unspecified": "Essen"
+    },
+    "plate": "{{slot}}: {{title}}"
+  },
+  "legend": {
+    "label": "Wer ist wer"
+  },
+  "status": {
+    "offline": "Offline · Stand von {{time}}",
+    "offlineNoTime": "Offline",
+    "stale": "Vielleicht nicht aktuell · Stand von {{time}}",
+    "staleNoTime": "Vielleicht nicht aktuell",
+    "cantUpdate": "Aktualisieren klappt nicht · Stand von {{time}}",
+    "cantUpdateNoTime": "Aktualisieren klappt nicht",
+    "error": "Der Plan konnte nicht geladen werden.",
+    "unauthorized": "Dieses Tablet braucht einen neuen Zugangslink."
+  },
+  "day": {
+    "meals": "Essen",
+    "loading": "Der Tag wird geholt …",
+    "empty": {
+      "title": "Heute ist nichts geplant",
+      "hint": "Zeit zum Spielen"
+    },
+    "error": {
+      "failed": "Eltern: Der Kalender ist gerade nicht erreichbar. KidBoard versucht es von selbst wieder.",
+      "offline": "Eltern: Kein Internet und noch kein gespeicherter Plan. KidBoard lädt, sobald das Netz zurück ist.",
+      "unauthorized": {
+        "title": "Ein Erwachsener hilft kurz",
+        "hint": "Eltern: Dieses Tablet braucht einen neuen Zugangslink, der alte gilt nicht mehr. Bitte die Person fragen, die KidBoard eingerichtet hat."
+      }
+    },
+    "hidden": {
+      "badge": "+{{count}}",
+      "earlier": "{{count}} weitere schon vorbei",
+      "later": "{{count}} weitere später: {{titles, list}}",
+      "allDay": "{{count}} weitere ganztägig: {{titles, list}}"
+    },
+    "today": "Heute",
+    "now": "jetzt",
+    "nowLabel": "jetzt, {{time}}",
+    "past": {
+      "label": "vorbei",
+      "list": "Schon vorbei: {{titles, list}}"
+    },
+    "done": "Alles geschafft!",
+    "free": "Nichts geplant"
+  },
+  "fullscreen": {
+    "enter": "Vollbild an (gedrückt halten)",
+    "exit": "Vollbild aus (gedrückt halten)",
+    "hint": "Gedrückt halten"
+  },
+  "board": {
+    "viewGroup": "Ansicht",
+    "day": "Heute",
+    "week": "Woche",
+    "updated": "Stand {{time}}",
+    "navLabel": "Navigation"
+  },
+  "week": {
+    "label": "Die nächsten sieben Tage",
+    "more": "{{count}} weitere: {{titles, list}}",
+    "meals": "Essen"
+  },
+  "countdown": {
+    "label": "Wie oft noch schlafen?",
+    "nights_one": "Noch einmal schlafen bis {{titles, list}}",
+    "nights_other": "Noch {{count}} Mal schlafen bis {{titles, list}}",
+    "todayLabel": "Heute ist es so weit: {{titles, list}}!",
+    "today": "Heute!",
+    "count": "{{count}} ×"
+  },
+  "bring": {
+    "tomorrow": "Für morgen einpacken: {{groups, list}}",
+    "today": "Heute mitbringen: {{groups, list}}",
+    "everyone": "Alle",
+    "cueTomorrow": "Morgen",
+    "cueToday": "Heute"
+  },
+  "parent": {
+    "entry": "Eltern-Bereich (2 Sekunden gedrückt halten)",
+    "pin": {
+      "title": "Eltern-Bereich",
+      "prompt": "PIN eingeben",
+      "checking": "Wird geprüft …",
+      "entered_one": "{{count}} Ziffer eingegeben",
+      "entered_other": "{{count}} Ziffern eingegeben",
+      "erase": "Letzte Ziffer löschen",
+      "submit": "OK",
+      "cancel": "Abbrechen",
+      "wrong_one": "Falsche PIN. Noch {{count}} Versuch.",
+      "wrong_other": "Falsche PIN. Noch {{count}} Versuche.",
+      "lockout_one": "Zu viele falsche PINs. In {{count}} Minute wieder versuchen.",
+      "lockout_other": "Zu viele falsche PINs. In {{count}} Minuten wieder versuchen.",
+      "error": {
+        "unauthorized": "Dieses Tablet braucht einen neuen Zugangslink.",
+        "unavailable": "Der Editor ist ausgeschaltet.",
+        "failed": "Die PIN konnte nicht geprüft werden. Bitte noch einmal versuchen."
+      },
+      "demo": "Demo: Die PIN ist {{pin}}"
+    },
+    "idle": {
+      "announce": "Gleich wird gesperrt. Ohne Eingabe sperrt sich der Eltern-Bereich in etwa {{seconds}} Sekunden. Wähle Weiter bearbeiten, um zu bleiben.",
+      "title": "Gleich wird gesperrt",
+      "text_one": "Ohne Eingabe sperrt sich der Eltern-Bereich in {{count}} Sekunde.",
+      "text_other": "Ohne Eingabe sperrt sich der Eltern-Bereich in {{count}} Sekunden.",
+      "stay": "Weiter bearbeiten"
+    },
+    "editor": {
+      "title": "Editor",
+      "done": "Fertig",
+      "placeholder": "Hier lassen sich bald Termine anlegen und ändern."
+    }
+  },
+  "editor": {
+    "home": {
+      "newEntry": "Neuer Eintrag",
+      "newMeal": "Was gibt's zu essen?"
+    },
+    "form": {
+      "newTitle": "Neuer Eintrag",
+      "editTitle": "Eintrag ändern",
+      "who": "Wer?",
+      "everyone": "Alle",
+      "unknownChild": "Nicht mehr eingerichtet ({{id}})",
+      "what": "Was?",
+      "groups": "Art der Aktivität",
+      "ownEmoji": "Eigenes Emoji",
+      "ownEmojiHint": "Ein Emoji, z. B. von der Tastatur.",
+      "ownEmojiInvalid": "Bitte genau ein Emoji eingeben.",
+      "ownEmojiChosen": "Dein Emoji",
+      "name": "Name auf der Kachel",
+      "nameHint": "Wird aus dem Bild übernommen. Kannst du ändern (bis 60 Zeichen).",
+      "when": "Wann?",
+      "day": "Tag",
+      "otherDay": "Anderer Tag",
+      "timeKind": "Uhrzeit oder ganztägig",
+      "atTime": "Mit Uhrzeit",
+      "allDay": "Ganztägig",
+      "start": "Beginn",
+      "duration": "Wie lange",
+      "minutes": "{{minutes}} Min.",
+      "hours": "{{hours}} Std.",
+      "hoursHalf": "{{hours}}½ Std.",
+      "repeat": "Wiederholen?",
+      "once": "Einmal",
+      "weekly": "Wöchentlich",
+      "weekdays": "An diesen Tagen",
+      "interval": "Wie oft",
+      "everyWeek": "Jede Woche",
+      "everyOtherWeek": "Alle 2 Wochen",
+      "until": "Letzter Tag (optional)",
+      "noEnd": "Kein letzter Tag",
+      "bring": "Mitbringen",
+      "bringHint": "Erscheint als kleine Bilder auf der Kachel, höchstens {{count}}.",
+      "ownBring": "Etwas anderes",
+      "ownBringItem": "{{icon}} mitbringen",
+      "add": "Hinzufügen",
+      "countdown": "Countdown",
+      "countdownHint": "Die Tafel zählt die Nächte bis zu diesem Tag.",
+      "countdownForced": "Dieses Bild zählt immer die Nächte.",
+      "countdownToggle": "Nächte zählen",
+      "preview": "So sieht es aus",
+      "previewEmpty": "Wähle ein Bild, um die Kachel zu sehen.",
+      "previewTitle": "Name",
+      "pastHint": "Liegt in der Vergangenheit. Speichern geht trotzdem."
+    },
+    "group": {
+      "sport": "Sport",
+      "school": "Schule & Kita",
+      "play": "Freunde & Spielen",
+      "appointments": "Termine",
+      "outings": "Ausflüge",
+      "celebrations": "Feiern"
+    },
+    "activity": {
+      "swimming": "Schwimmen",
+      "football": "Fußball",
+      "gymnastics": "Turnen",
+      "ballet": "Ballett",
+      "riding": "Reiten",
+      "cycling": "Radfahren",
+      "tennis": "Tennis",
+      "judo": "Judo",
+      "school": "Schule",
+      "kindergarten": "Kita",
+      "homework": "Hausaufgaben",
+      "music": "Musikschule",
+      "library": "Bücherei",
+      "parentsEvening": "Elternabend",
+      "schoolTrip": "Klassenausflug",
+      "playdate": "Spielverabredung",
+      "playground": "Spielplatz",
+      "sleepover": "Übernachtung",
+      "games": "Spieleabend",
+      "crafts": "Basteln",
+      "building": "Bauklötze",
+      "kite": "Drachen steigen",
+      "doctor": "Kinderarzt",
+      "dentist": "Zahnarzt",
+      "haircut": "Friseur",
+      "vaccination": "Impfung",
+      "optician": "Optiker",
+      "therapy": "Logopädie",
+      "vet": "Tierarzt",
+      "zoo": "Zoo",
+      "museum": "Museum",
+      "cinema": "Kino",
+      "forest": "Waldspaziergang",
+      "grandparents": "Oma besuchen",
+      "farm": "Bauernhof",
+      "train": "Zugfahrt",
+      "theatre": "Theater",
+      "birthday": "Geburtstag",
+      "party": "Party",
+      "presents": "Geschenke",
+      "christmas": "Weihnachten",
+      "easter": "Ostern",
+      "holiday": "Urlaub",
+      "wedding": "Hochzeit",
+      "lanterns": "Laternenumzug"
+    },
+    "bring": {
+      "shoes": "Turnschuhe",
+      "swimsuit": "Badeanzug",
+      "goggles": "Schwimmbrille",
+      "sunscreen": "Sonnencreme",
+      "cap": "Mütze",
+      "jacket": "Jacke",
+      "umbrella": "Schirm",
+      "snack": "Brotdose",
+      "drink": "Trinkflasche",
+      "books": "Bücher",
+      "pencil": "Federmappe",
+      "ruler": "Lineal",
+      "money": "Geld",
+      "socks": "Socken",
+      "gloves": "Handschuhe",
+      "present": "Geschenk"
+    },
+    "dish": {
+      "spaghetti": "Spaghetti",
+      "pizza": "Pizza",
+      "soup": "Suppe",
+      "curry": "Curry",
+      "rice": "Reis",
+      "noodles": "Nudelsuppe",
+      "pancakes": "Pfannkuchen",
+      "waffles": "Waffeln",
+      "burger": "Burger",
+      "fries": "Pommes",
+      "fish": "Fisch",
+      "chicken": "Hähnchen",
+      "salad": "Salat",
+      "sandwich": "Brote",
+      "sushi": "Sushi",
+      "tacos": "Tacos",
+      "wrap": "Wraps",
+      "dumplings": "Maultaschen",
+      "eggs": "Eier",
+      "muesli": "Müsli",
+      "bread": "Brot",
+      "potatoes": "Kartoffeln",
+      "vegetables": "Gemüse",
+      "fruit": "Obst"
+    },
+    "templates": {
+      "title": "Nochmal",
+      "quick": {
+        "swimmingWeekly": "Schwimmen jede Woche",
+        "birthday": "Geburtstag mit Countdown",
+        "dentist": "Zahnarzt"
+      }
+    },
+    "day": {
+      "today": "Heute",
+      "tomorrow": "Morgen",
+      "date": "{{weekday}}, {{date}}",
+      "full": "{{weekday}}, {{date}}",
+      "relative": "{{day}} · {{date}}"
+    },
+    "list": {
+      "title": "Die nächsten 14 Tage",
+      "loading": "Einträge werden geholt …",
+      "empty": "In den nächsten 14 Tagen ist nichts geplant.",
+      "fromGoogle": "Aus Google Kalender – dort ändern",
+      "edit": "Ändern",
+      "editNamed": "{{title}} ändern",
+      "template": "Als Vorlage",
+      "templateNamed": "{{title}} als Vorlage nehmen",
+      "meals": "Essen",
+      "unresolved": "Bitte ansehen",
+      "unresolvedChild": "Ein Kind dieses Eintrags ist nicht mehr eingerichtet. Ändern oder löschen.",
+      "unresolvedOther": "Dieser Eintrag passt nicht mehr zu den Einstellungen. Ändern oder löschen.",
+      "fix": "Ändern",
+      "fixNamed": "{{title}} ändern",
+      "deleteNamed": "{{title}} löschen",
+      "changed": "Dieser Tag geändert"
+    },
+    "problem": {
+      "icon": "Wähle ein Bild oder gib ein eigenes Emoji ein.",
+      "title": "Gib einen Namen ein: eine Zeile, bis 60 Zeichen.",
+      "time": "Das Ende muss nach dem Beginn liegen.",
+      "until": "Der letzte Tag darf nicht vor dem ersten liegen.",
+      "children": "Wähle Kinder, die eingerichtet sind.",
+      "invalid": "Etwas an diesem Eintrag passt nicht. Bitte prüfen.",
+      "ownEmoji": "Im Feld „Eigenes Emoji“ steht kein einzelnes Emoji. Bitte korrigieren oder leeren."
+    },
+    "error": {
+      "offline": "Keine Verbindung. Dein Eintrag bleibt hier – versuch es nochmal, wenn das Netz wieder da ist.",
+      "timeout": "Das hat zu lange gedauert. Dein Eintrag bleibt hier – bitte nochmal versuchen.",
+      "unauthorized": "Dieses Tablet braucht einen neuen Zugangslink.",
+      "locked": "Zur Sicherheit hat sich der Editor gesperrt. PIN nochmal eingeben – dein Eintrag bleibt.",
+      "conflict": "Dieser Eintrag wurde inzwischen woanders geändert. Speichern behält deine Fassung, Abbrechen zeigt die aktuelle.",
+      "conflictDelete": "Dieser Eintrag wurde inzwischen woanders geändert. Sieh ihn dir in der Liste an und lösche ihn dann erneut, wenn du willst.",
+      "limitEntries": "Der Editor ist voll (1.000 Einträge). Bitte zuerst alte Einträge löschen.",
+      "limitSize": "Dieser Eintrag ist zu groß. Bitte kürzen.",
+      "invalid": "Bitte die markierten Felder prüfen.",
+      "notFound": "Diesen Eintrag gibt es nicht mehr. Die Liste wurde aktualisiert.",
+      "storage": "Die hier gemachten Einträge sind gerade nicht erreichbar. Nichts geht verloren – gleich nochmal versuchen.",
+      "tooLarge": "Diese Datei ist zu groß.",
+      "failed": "Etwas hat nicht geklappt. Bitte nochmal versuchen."
+    },
+    "action": {
+      "save": "Speichern",
+      "saving": "Speichert …",
+      "cancel": "Abbrechen",
+      "delete": "Löschen",
+      "retry": "Nochmal versuchen",
+      "unlockAgain": "PIN eingeben"
+    },
+    "toast": {
+      "saved": "Gespeichert – die Tafel zeigt es jetzt.",
+      "deleted": "Gelöscht.",
+      "exported": "Sicherung heruntergeladen.",
+      "imported_one": "{{count}} Eintrag übernommen. {{updated}} aktualisiert, {{created}} neu.",
+      "imported_other": "{{count}} Einträge übernommen. {{updated}} aktualisiert, {{created}} neu.",
+      "copied_one": "{{count}} Essen kopiert.",
+      "copied_other": "{{count}} Essen kopiert.",
+      "close": "Hinweis schließen"
+    },
+    "scope": {
+      "title": "„{{title}}“ ändern",
+      "text": "Dieser Eintrag wiederholt sich. Was soll sich ändern?",
+      "one": "Nur am {{day}}",
+      "series": "Ganze Reihe",
+      "overrideText": "Dieser Tag wurde schon einzeln geändert; „Ganze Reihe“ übernimmt deinen Eintrag auch für ihn."
+    },
+    "delete": {
+      "title": "„{{title}}“ löschen?",
+      "text": "Er verschwindet von der Tafel.",
+      "seriesText": "Nur diesen Tag oder die ganze Reihe löschen?",
+      "keep": "Behalten",
+      "series": "Ganze Reihe löschen"
+    },
+    "meal": {
+      "newTitle": "Was gibt's zu essen?",
+      "editTitle": "Essen ändern",
+      "day": "Welcher Tag?",
+      "slot": "Welche Mahlzeit?",
+      "slots": {
+        "breakfast": "Frühstück",
+        "lunch": "Mittagessen",
+        "dinner": "Abendessen",
+        "unspecified": "Irgendwann"
+      },
+      "dish": "Was gibt es?",
+      "previewEmpty": "Wähle ein Gericht, um den Teller zu sehen.",
+      "taken": "An diesem Tag steht schon: {{titles}}. Speichern trägt deins zusätzlich ein."
+    },
+    "copy": {
+      "title": "Essen der letzten Woche wiederholen",
+      "hint": "Kopiert die hier eingetragenen Essen der letzten 7 Tage auf dieselben Wochentage der nächsten 7 Tage. Ist die Mahlzeit an dem Tag schon belegt, wird nichts kopiert.",
+      "action": "Letzte Woche wiederholen",
+      "nothing": "Aus der letzten Woche gibt es kein Essen zum Kopieren.",
+      "partial": "{{done}} von {{count}} Essen kopiert. Der Rest konnte nicht gespeichert werden – nochmal versuchen, Kopiertes wird übersprungen.",
+      "confirmTitle_one": "{{count}} Essen kopieren?",
+      "confirmTitle_other": "{{count}} Essen kopieren?",
+      "confirmText": "Sie kommen von {{from}} bis {{to}} dazu.",
+      "confirmAction": "Kopieren"
+    },
+    "feed": {
+      "title": "Kalender auf dem Handy",
+      "hint": "Google Kalender: „Weitere Kalender“ › „Per URL“. iPhone oder Mac: in der Kalender-App „Kalenderabo hinzufügen“. Den Link dort einfügen. Bitte privat halten: Jeder mit dem Link kann die Einträge lesen.",
+      "link": "Link zum Abonnieren",
+      "copy": "Link kopieren",
+      "copied": "Link kopiert",
+      "select": "Der Link ist markiert – jetzt kopieren"
+    },
+    "data": {
+      "title": "Sicherung & Handy",
+      "export": "Sicherung herunterladen",
+      "choose": "Sicherungsdatei wählen",
+      "hint": "Die Sicherung enthält die hier gemachten Einträge (nicht die aus Google).",
+      "notBackup": "Diese Datei ist keine KidBoard-Sicherung.",
+      "chosen_one": "{{name}}: {{count}} Eintrag",
+      "chosen_other": "{{name}}: {{count}} Einträge",
+      "mode": "Wie importieren",
+      "merge": "Zu meinen Einträgen hinzufügen",
+      "replace": "Alle Einträge ersetzen",
+      "import": "Importieren",
+      "confirm": {
+        "mergeTitle_one": "{{count}} Eintrag hinzufügen?",
+        "mergeTitle_other": "{{count}} Einträge hinzufügen?",
+        "mergeText": "Einträge mit derselben ID werden überschrieben, alle anderen bleiben.",
+        "mergeAction": "Hinzufügen",
+        "replaceTitle_one": "Alles durch {{count}} Eintrag ersetzen?",
+        "replaceTitle_other": "Alles durch {{count}} Einträge ersetzen?",
+        "replaceText": "Alle hier gemachten Einträge werden vorher gelöscht. Einträge aus Google bleiben.",
+        "replaceAction": "Alles ersetzen"
+      }
+    },
+    "discard": {
+      "title": "Änderungen verwerfen?",
+      "text": "Was du hier geändert hast, wird nicht gespeichert.",
+      "action": "Verwerfen",
+      "keep": "Weiter bearbeiten"
+    },
+    "jump": {
+      "top": "Nach oben",
+      "label": "Springen zu",
+      "list": "Termine",
+      "data": "Sicherung & Handy"
+    }
+  },
+  "weather": {
+    "attribution": "Wetter:",
+    "source": "Open-Meteo.com",
+    "temperature": "{{value}}°",
+    "degrees_one": "{{count}} Grad",
+    "degrees_other": "{{count}} Grad",
+    "nowAndHigh": "{{kind}}, jetzt {{now}}, bis {{high}}",
+    "high": "{{kind}}, bis {{high}}",
+    "now": "Jetzt {{now}}",
+    "heading": "{{day}}, {{weather}}",
+    "kind": {
+      "clear": "Sonnig",
+      "mostlyClear": "Meist sonnig",
+      "partlyCloudy": "Teils bewölkt",
+      "cloudy": "Bewölkt",
+      "fog": "Nebel",
+      "drizzle": "Nieselregen",
+      "rain": "Regen",
+      "snow": "Schnee",
+      "thunder": "Gewitter"
+    },
+    "wear": {
+      "today": "Heute anziehen: {{items, list}}",
+      "tomorrow": "Morgen: {{weather}}. Anziehen: {{items, list}}"
+    },
+    "clothing": {
+      "umbrella": "Regenschirm",
+      "rainBoots": "Gummistiefel",
+      "winterBoots": "Winterstiefel",
+      "jacket": "Jacke",
+      "hat": "Mütze",
+      "gloves": "Handschuhe",
+      "scarf": "Schal",
+      "sweater": "Pulli",
+      "tshirt": "T-Shirt",
+      "shorts": "kurze Hose",
+      "cap": "Kappe",
+      "sunscreen": "Sonnencreme"
+    }
+  }
+}

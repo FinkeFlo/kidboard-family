@@ -1,0 +1,32 @@
+{
+  // Single Wrangler config of the monorepo (docs/DEPLOY.md). It lives at the repository
+  // root because "Deploy to Cloudflare" and Workers Builds read it from there; `wrangler`
+  // run in apps/worker finds it by searching up. Paths are relative to this file, and
+  // `.dev.vars` (local secrets) belongs next to it.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "kidboard-family",
+  "main": "apps/worker/src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    // Built by `pnpm --filter @kidboard/web build`; it must exist before deploy/dev.
+    "directory": "apps/web/dist",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  // Source cache (ADR-0006). No id on purpose: Wrangler provisions the namespace on the
+  // first deploy (also for dashboard/Git deploys); `wrangler dev` uses a local one.
+  "kv_namespaces": [{ "binding": "KIDBOARD_CACHE","id": "2f7a4aa877e04e28bf602918f126f035" }],
+  // App entries of the parent editor (ADR-0014). No id on purpose, like the KV namespace:
+  // Wrangler provisions the database on the first deploy; `wrangler dev` and the vitest
+  // plugin use a local one. The worker creates its tables on first use (no migrations).
+  "d1_databases": [{ "binding": "KIDBOARD_DATA","database_id": "1a515ef9-f1a5-41bb-b1b8-a0e0a20795d3","database_name": "kidboard" }],
+  // No `vars` here: settings are secrets/variables set per deployment (docs/CONFIG.md).
+  // Keep variables set in the dashboard instead of deleting them on every deploy.
+  "keep_vars": true,
+  "observability": {
+    // Workers Logs (default for new Workers). The API also accepts `?key=<token>`, so
+    // query strings are dropped from logged request URLs.
+    "enabled": true,
+    "redact_query_string": true
+  }
+}

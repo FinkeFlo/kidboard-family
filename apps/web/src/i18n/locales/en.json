@@ -1,0 +1,492 @@
+{
+  "error": {
+    "title": "Back in a moment",
+    "hint": "Parents: Something went wrong. KidBoard restarts on its own shortly.",
+    "retry": "Reload now",
+    "code": "Error code for parents: {{code}}"
+  },
+  "event": {
+    "allDay": "All day",
+    "status": {
+      "past": "Already over",
+      "current": "Happening now",
+      "next": "Next"
+    },
+    "forEveryone": "For everyone",
+    "continues": "Continues",
+    "forChildren": "For {{names, list}}",
+    "moreChildren": "+{{count}}",
+    "bring": "Bring along: {{icons}}"
+  },
+  "meal": {
+    "slot": {
+      "breakfast": "Breakfast",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "unspecified": "Meal"
+    },
+    "plate": "{{slot}}: {{title}}"
+  },
+  "legend": {
+    "label": "Who is who"
+  },
+  "status": {
+    "offline": "Offline · as of {{time}}",
+    "offlineNoTime": "Offline",
+    "stale": "Maybe not current · as of {{time}}",
+    "staleNoTime": "Maybe not current",
+    "cantUpdate": "Can't update · as of {{time}}",
+    "cantUpdateNoTime": "Can't update",
+    "error": "The plan could not be loaded.",
+    "unauthorized": "This tablet needs a new access link."
+  },
+  "day": {
+    "meals": "Meals",
+    "loading": "Getting the day …",
+    "empty": {
+      "title": "Nothing planned today",
+      "hint": "Time to play"
+    },
+    "error": {
+      "failed": "Parents: The calendar can't be reached right now. KidBoard keeps trying on its own.",
+      "offline": "Parents: No internet and no saved plan yet. KidBoard loads as soon as the network is back.",
+      "unauthorized": {
+        "title": "A grown-up can fix this",
+        "hint": "Parents: This tablet needs a new access link; the old one is no longer valid. Please ask whoever set up KidBoard."
+      }
+    },
+    "hidden": {
+      "badge": "+{{count}}",
+      "earlier": "{{count}} more already over",
+      "later": "{{count}} more later: {{titles, list}}",
+      "allDay": "{{count}} more all day: {{titles, list}}"
+    },
+    "today": "Today",
+    "now": "now",
+    "nowLabel": "now, {{time}}",
+    "past": {
+      "label": "done",
+      "list": "Already over: {{titles, list}}"
+    },
+    "done": "All done!",
+    "free": "Nothing planned"
+  },
+  "fullscreen": {
+    "enter": "Fullscreen on (press and hold)",
+    "exit": "Fullscreen off (press and hold)",
+    "hint": "Press and hold"
+  },
+  "board": {
+    "viewGroup": "View",
+    "day": "Today",
+    "week": "Week",
+    "updated": "Updated {{time}}",
+    "navLabel": "Navigation"
+  },
+  "week": {
+    "label": "Next seven days",
+    "more": "{{count}} more: {{titles, list}}",
+    "meals": "Meals"
+  },
+  "countdown": {
+    "label": "How many sleeps?",
+    "nights_one": "{{count}} more sleep until {{titles, list}}",
+    "nights_other": "{{count}} more sleeps until {{titles, list}}",
+    "todayLabel": "Today is the day: {{titles, list}}!",
+    "today": "Today!",
+    "count": "{{count}} ×"
+  },
+  "bring": {
+    "tomorrow": "Pack for tomorrow: {{groups, list}}",
+    "today": "Today bring: {{groups, list}}",
+    "everyone": "Everyone",
+    "cueTomorrow": "Tomorrow",
+    "cueToday": "Today"
+  },
+  "parent": {
+    "entry": "Parent area (press and hold for 2 seconds)",
+    "pin": {
+      "title": "Parent area",
+      "prompt": "Enter PIN",
+      "checking": "Checking …",
+      "entered_one": "{{count}} digit entered",
+      "entered_other": "{{count}} digits entered",
+      "erase": "Delete last digit",
+      "submit": "OK",
+      "cancel": "Cancel",
+      "wrong_one": "Wrong PIN. {{count}} more try.",
+      "wrong_other": "Wrong PIN. {{count}} more tries.",
+      "lockout_one": "Too many wrong PINs. Try again in {{count}} minute.",
+      "lockout_other": "Too many wrong PINs. Try again in {{count}} minutes.",
+      "error": {
+        "unauthorized": "This tablet needs a new access link.",
+        "unavailable": "The editor is switched off.",
+        "failed": "The PIN could not be checked. Please try again."
+      },
+      "demo": "Demo: the PIN is {{pin}}"
+    },
+    "idle": {
+      "announce": "Locking soon. Without input the parent area locks in about {{seconds}} seconds. Choose Keep editing to stay.",
+      "title": "Locking soon",
+      "text_one": "Without input the parent area locks in {{count}} second.",
+      "text_other": "Without input the parent area locks in {{count}} seconds.",
+      "stay": "Keep editing"
+    },
+    "editor": {
+      "title": "Editor",
+      "done": "Done",
+      "placeholder": "Entries can be added and changed here soon."
+    }
+  },
+  "editor": {
+    "home": {
+      "newEntry": "New entry",
+      "newMeal": "Add a meal"
+    },
+    "form": {
+      "newTitle": "New entry",
+      "editTitle": "Change entry",
+      "who": "Who?",
+      "everyone": "Everyone",
+      "unknownChild": "No longer set up ({{id}})",
+      "what": "What?",
+      "groups": "Kind of activity",
+      "ownEmoji": "Your own emoji",
+      "ownEmojiHint": "One emoji, e.g. from the keyboard.",
+      "ownEmojiInvalid": "Please enter exactly one emoji.",
+      "ownEmojiChosen": "Your emoji",
+      "name": "Name on the tile",
+      "nameHint": "Filled in from the picture. Change it if you like (up to 60 characters).",
+      "when": "When?",
+      "day": "Day",
+      "otherDay": "Other day",
+      "timeKind": "Time or all day",
+      "atTime": "At a time",
+      "allDay": "All day",
+      "start": "Starts at",
+      "duration": "How long",
+      "minutes": "{{minutes}} min",
+      "hours": "{{hours}} h",
+      "hoursHalf": "{{hours}}½ h",
+      "repeat": "Repeat?",
+      "once": "Once",
+      "weekly": "Weekly",
+      "weekdays": "On these days",
+      "interval": "How often",
+      "everyWeek": "Every week",
+      "everyOtherWeek": "Every 2 weeks",
+      "until": "Last day (optional)",
+      "noEnd": "No last day",
+      "bring": "Bring along",
+      "bringHint": "Shown as small pictures on the tile, at most {{count}}.",
+      "ownBring": "Something else",
+      "ownBringItem": "Bring {{icon}}",
+      "add": "Add",
+      "countdown": "Countdown",
+      "countdownHint": "The board counts the sleeps until this day.",
+      "countdownForced": "This picture always counts the sleeps.",
+      "countdownToggle": "Count the sleeps",
+      "preview": "This is how it looks",
+      "previewEmpty": "Pick a picture to see the tile.",
+      "previewTitle": "Name",
+      "pastHint": "This is in the past. You can still save it."
+    },
+    "group": {
+      "sport": "Sport",
+      "school": "School & kindergarten",
+      "play": "Friends & play",
+      "appointments": "Appointments",
+      "outings": "Outings",
+      "celebrations": "Celebrations"
+    },
+    "activity": {
+      "swimming": "Swimming",
+      "football": "Football",
+      "gymnastics": "Gymnastics",
+      "ballet": "Ballet",
+      "riding": "Riding",
+      "cycling": "Cycling",
+      "tennis": "Tennis",
+      "judo": "Judo",
+      "school": "School",
+      "kindergarten": "Kindergarten",
+      "homework": "Homework",
+      "music": "Music lesson",
+      "library": "Library",
+      "parentsEvening": "Parents' evening",
+      "schoolTrip": "School trip",
+      "playdate": "Playdate",
+      "playground": "Playground",
+      "sleepover": "Sleepover",
+      "games": "Games",
+      "crafts": "Crafts",
+      "building": "Building blocks",
+      "kite": "Flying a kite",
+      "doctor": "Doctor",
+      "dentist": "Dentist",
+      "haircut": "Haircut",
+      "vaccination": "Vaccination",
+      "optician": "Optician",
+      "therapy": "Speech therapy",
+      "vet": "Vet",
+      "zoo": "Zoo",
+      "museum": "Museum",
+      "cinema": "Cinema",
+      "forest": "Forest walk",
+      "grandparents": "Visit Grandma",
+      "farm": "Farm",
+      "train": "Train ride",
+      "theatre": "Theatre",
+      "birthday": "Birthday",
+      "party": "Party",
+      "presents": "Presents",
+      "christmas": "Christmas",
+      "easter": "Easter",
+      "holiday": "Holiday",
+      "wedding": "Wedding",
+      "lanterns": "Lantern walk"
+    },
+    "bring": {
+      "shoes": "Sports shoes",
+      "swimsuit": "Swimsuit",
+      "goggles": "Goggles",
+      "sunscreen": "Sun cream",
+      "cap": "Cap",
+      "jacket": "Jacket",
+      "umbrella": "Umbrella",
+      "snack": "Snack",
+      "drink": "Drink",
+      "books": "Books",
+      "pencil": "Pencil case",
+      "ruler": "Ruler",
+      "money": "Money",
+      "socks": "Socks",
+      "gloves": "Gloves",
+      "present": "Present"
+    },
+    "dish": {
+      "spaghetti": "Spaghetti",
+      "pizza": "Pizza",
+      "soup": "Soup",
+      "curry": "Curry",
+      "rice": "Rice",
+      "noodles": "Noodles",
+      "pancakes": "Pancakes",
+      "waffles": "Waffles",
+      "burger": "Burger",
+      "fries": "Chips",
+      "fish": "Fish",
+      "chicken": "Chicken",
+      "salad": "Salad",
+      "sandwich": "Sandwiches",
+      "sushi": "Sushi",
+      "tacos": "Tacos",
+      "wrap": "Wraps",
+      "dumplings": "Dumplings",
+      "eggs": "Eggs",
+      "muesli": "Muesli",
+      "bread": "Bread",
+      "potatoes": "Potatoes",
+      "vegetables": "Vegetables",
+      "fruit": "Fruit"
+    },
+    "templates": {
+      "title": "Again",
+      "quick": {
+        "swimmingWeekly": "Swimming every week",
+        "birthday": "Birthday with countdown",
+        "dentist": "Dentist"
+      }
+    },
+    "day": {
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "date": "{{weekday}}, {{date}}",
+      "full": "{{weekday}}, {{date}}",
+      "relative": "{{day}} · {{date}}"
+    },
+    "list": {
+      "title": "Next 14 days",
+      "loading": "Getting the entries …",
+      "empty": "Nothing planned in the next 14 days.",
+      "fromGoogle": "From Google Calendar – change it there",
+      "edit": "Change",
+      "editNamed": "Change {{title}}",
+      "template": "Use as template",
+      "templateNamed": "Use {{title}} as template",
+      "meals": "Meals",
+      "unresolved": "Needs a look",
+      "unresolvedChild": "A child of this entry is no longer set up. Change or delete it.",
+      "unresolvedOther": "This entry no longer fits the settings. Change or delete it.",
+      "fix": "Change",
+      "fixNamed": "Change {{title}}",
+      "deleteNamed": "Delete {{title}}",
+      "changed": "This day changed"
+    },
+    "problem": {
+      "icon": "Pick a picture or enter your own emoji.",
+      "title": "Give it a name: one line, up to 60 characters.",
+      "time": "The end has to be after the start.",
+      "until": "The last day must not be before the first day.",
+      "children": "Pick children that are set up.",
+      "invalid": "Something in this entry does not fit. Please check it.",
+      "ownEmoji": "The “Your own emoji” field holds no single emoji. Please fix or clear it."
+    },
+    "error": {
+      "offline": "No connection. Your entry is still here – try again when the network is back.",
+      "timeout": "That took too long. Your entry is still here – please try again.",
+      "unauthorized": "This tablet needs a new access link.",
+      "locked": "For safety the editor locked itself. Enter the PIN again – your entry stays.",
+      "conflict": "This entry was changed somewhere else in the meantime. Save keeps your version, Cancel shows the current one.",
+      "conflictDelete": "This entry was changed somewhere else in the meantime. Look at it in the list and delete it once more if you want.",
+      "limitEntries": "The editor is full (1,000 entries). Delete old entries first.",
+      "limitSize": "This entry is too large. Please shorten it.",
+      "invalid": "Please check the marked fields.",
+      "notFound": "This entry no longer exists. The list has been updated.",
+      "storage": "Entries made here can't be reached right now. Nothing is lost – try again in a moment.",
+      "tooLarge": "This file is too large.",
+      "failed": "Something went wrong. Please try again."
+    },
+    "action": {
+      "save": "Save",
+      "saving": "Saving …",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "retry": "Try again",
+      "unlockAgain": "Enter PIN"
+    },
+    "toast": {
+      "saved": "Saved – the board shows it now.",
+      "deleted": "Deleted.",
+      "exported": "Backup downloaded.",
+      "imported_one": "{{count}} entry imported. {{updated}} updated, {{created}} new.",
+      "imported_other": "{{count}} entries imported. {{updated}} updated, {{created}} new.",
+      "copied_one": "{{count}} meal copied.",
+      "copied_other": "{{count}} meals copied.",
+      "close": "Close message"
+    },
+    "scope": {
+      "title": "Change “{{title}}”",
+      "text": "This entry repeats. What should change?",
+      "one": "Only on {{day}}",
+      "series": "Whole series",
+      "overrideText": "This day was changed on its own before; “Whole series” gives it your entry too."
+    },
+    "delete": {
+      "title": "Delete “{{title}}”?",
+      "text": "It disappears from the board.",
+      "seriesText": "Delete only this day or the whole series?",
+      "keep": "Keep",
+      "series": "Delete whole series"
+    },
+    "meal": {
+      "newTitle": "Add a meal",
+      "editTitle": "Change meal",
+      "day": "Which day?",
+      "slot": "Which meal?",
+      "slots": {
+        "breakfast": "Breakfast",
+        "lunch": "Lunch",
+        "dinner": "Dinner",
+        "unspecified": "Any time"
+      },
+      "dish": "Which dish?",
+      "previewEmpty": "Pick a dish to see the plate.",
+      "taken": "Already planned on this day: {{titles}}. Saving adds yours as well."
+    },
+    "copy": {
+      "title": "Repeat last week's meals",
+      "hint": "Copies the meals entered here for the last 7 days to the same weekdays of the next 7 days. Where that meal of the day is already planned, nothing is copied.",
+      "action": "Repeat last week",
+      "nothing": "There are no meals from last week to copy.",
+      "partial": "{{done}} of {{count}} meals copied. The rest could not be saved – try again, copied meals are skipped.",
+      "confirmTitle_one": "Copy {{count}} meal?",
+      "confirmTitle_other": "Copy {{count}} meals?",
+      "confirmText": "They are added from {{from}} to {{to}}.",
+      "confirmAction": "Copy"
+    },
+    "feed": {
+      "title": "Calendar on your phone",
+      "hint": "Google Calendar: “Other calendars” › “From URL”. iPhone or Mac: “Add subscribed calendar” in Calendar. Paste the link there. Keep it private: everyone with the link can read the entries.",
+      "link": "Link to subscribe to",
+      "copy": "Copy link",
+      "copied": "Link copied",
+      "select": "The link is selected – copy it now"
+    },
+    "data": {
+      "title": "Backup & phone",
+      "export": "Download backup",
+      "choose": "Choose backup file",
+      "hint": "The backup holds the entries made here (not the Google entries).",
+      "notBackup": "This file is not a KidBoard backup.",
+      "chosen_one": "{{name}}: {{count}} entry",
+      "chosen_other": "{{name}}: {{count}} entries",
+      "mode": "How to import",
+      "merge": "Add to my entries",
+      "replace": "Replace all entries",
+      "import": "Import",
+      "confirm": {
+        "mergeTitle_one": "Add {{count}} entry?",
+        "mergeTitle_other": "Add {{count}} entries?",
+        "mergeText": "Entries with the same id are overwritten, all others stay.",
+        "mergeAction": "Add",
+        "replaceTitle_one": "Replace everything with {{count}} entry?",
+        "replaceTitle_other": "Replace everything with {{count}} entries?",
+        "replaceText": "All entries made here are deleted first. Google entries stay.",
+        "replaceAction": "Replace all"
+      }
+    },
+    "discard": {
+      "title": "Discard changes?",
+      "text": "What you changed here is not saved.",
+      "action": "Discard",
+      "keep": "Keep editing"
+    },
+    "jump": {
+      "top": "Back to top",
+      "label": "Jump to",
+      "list": "Entries",
+      "data": "Backup & phone"
+    }
+  },
+  "weather": {
+    "attribution": "Weather:",
+    "source": "Open-Meteo.com",
+    "temperature": "{{value}}°",
+    "degrees_one": "{{count}} degree",
+    "degrees_other": "{{count}} degrees",
+    "nowAndHigh": "{{kind}}, now {{now}}, high {{high}}",
+    "high": "{{kind}}, high {{high}}",
+    "now": "Now {{now}}",
+    "heading": "{{day}}, {{weather}}",
+    "kind": {
+      "clear": "Sunny",
+      "mostlyClear": "Mostly sunny",
+      "partlyCloudy": "Partly cloudy",
+      "cloudy": "Cloudy",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "snow": "Snow",
+      "thunder": "Thunderstorm"
+    },
+    "wear": {
+      "today": "Wear today: {{items, list}}",
+      "tomorrow": "Tomorrow: {{weather}}. Wear: {{items, list}}"
+    },
+    "clothing": {
+      "umbrella": "umbrella",
+      "rainBoots": "rain boots",
+      "winterBoots": "winter boots",
+      "jacket": "jacket",
+      "hat": "warm hat",
+      "gloves": "gloves",
+      "scarf": "scarf",
+      "sweater": "sweater",
+      "tshirt": "T-shirt",
+      "shorts": "shorts",
+      "cap": "cap",
+      "sunscreen": "sunscreen"
+    }
+  }
+}

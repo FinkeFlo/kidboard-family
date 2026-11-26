@@ -1,0 +1,71 @@
+# Dependabot version updates. Minor/patch updates are grouped; major updates
+# arrive as individual pull requests so each breaking change is reviewed alone.
+version: 2
+updates:
+  # pnpm workspace: Dependabot reads pnpm-lock.yaml at the root and updates every
+  # workspace package.json (apps/*, packages/*).
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 10
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: build
+      prefix-development: build
+      include: scope
+    ignore:
+      # Node 22 LTS is the runtime (.nvmrc); keep @types/node on 22.x.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+    groups:
+      react:
+        update-types: [minor, patch]
+        patterns:
+          - react
+          - react-dom
+          - "@types/react"
+          - "@types/react-dom"
+          - "@testing-library/*"
+      cloudflare:
+        update-types: [minor, patch]
+        patterns:
+          - wrangler
+          - "@cloudflare/*"
+          - hono
+      dev-tooling:
+        update-types: [minor, patch]
+        patterns:
+          - typescript
+          - typescript-eslint
+          - eslint
+          - "eslint-*"
+          - "@eslint/*"
+          - globals
+          - prettier
+          - "prettier-*"
+          - vite
+          - "@vitejs/*"
+          - vitest
+          - "@vitest/*"
+          - jsdom
+          - "@playwright/test"
+          - lefthook
+          - "@commitlint/*"
+          - "@types/*"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      timezone: Europe/Berlin
+    commit-message:
+      prefix: ci
+      include: scope
+    groups:
+      actions:
+        patterns: ["*"]

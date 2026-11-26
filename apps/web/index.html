@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KidBoard</title>
+    <!--
+      Theme boot (before first paint): re-applies the last theme the board applied
+      (`kidboard.theme`, see src/theme/themeMemory.ts), so a cold start at night shows the
+      skeleton or error screen in night tokens before the config is known. Classic inline
+      script, synchronous, no network. The production CSP allows it by its SHA-256 hash,
+      computed from the built file by headers/staticHeaders.ts (dist/_headers), so edits
+      need no manual hash update. Blocked storage: light tokens, as before.
+    -->
+    <script data-theme-boot>
+      (function () {
+        try {
+          var theme = window.localStorage.getItem("kidboard.theme");
+          if (theme === "night" || theme === "light") {
+            document.documentElement.setAttribute("data-theme", theme);
+          }
+        } catch (error) {
+          // Storage unavailable: keep the default (light) tokens.
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

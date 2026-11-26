@@ -1,0 +1,18 @@
+pre-commit:
+  jobs:
+    - name: prettier
+      glob: "*.{js,mjs,cjs,ts,tsx,json,jsonc,md,yml,yaml,css,html}"
+      run: pnpm exec prettier --write --ignore-unknown {staged_files}
+      stage_fixed: true
+    - name: eslint
+      glob: "*.{js,mjs,cjs,ts,tsx}"
+      run: pnpm exec eslint --max-warnings=0 {staged_files}
+    - name: forbidden-terms
+      run: node scripts/check-forbidden-terms.mjs
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm exec commitlint --edit {1}
+    - name: forbidden-terms
+      run: node scripts/check-forbidden-terms.mjs --msg {1}

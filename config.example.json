@@ -1,0 +1,28 @@
+{
+  "locale": "auto",
+  "timeZone": "Europe/Berlin",
+  "children": [
+    { "id": "mia", "name": "Mia", "color": "#E4572E", "avatar": "🦊" },
+    { "id": "ben", "name": "Ben", "color": "#2E86AB", "avatar": "🐻" }
+  ],
+  "calendars": [
+    { "id": "kinder", "kind": "events", "label": "Kinder" },
+    { "id": "essen", "kind": "meals", "label": "Essen" },
+    { "id": "mia", "kind": "events", "childId": "mia", "label": "Mia" }
+  ],
+  "bands": {
+    "morningStart": "06:00",
+    "middayStart": "11:00",
+    "eveningStart": "17:00"
+  },
+  "nightMode": {
+    "enabled": true,
+    "start": "19:30",
+    "end": "06:30"
+  },
+  "countdown": {
+    "emojis": ["🎂", "🎉", "🎁", "🎄", "🐣", "✈️", "🏖️"]
+  },
+  "refreshMinutes": 60,
+  "autoReturnSeconds": 120
+}

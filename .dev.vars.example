@@ -1,0 +1,58 @@
+# KidBoard worker - secrets template (dotenv format). NEVER commit real values.
+#
+# Local development: copy to `.dev.vars` in the repository root (next to wrangler.jsonc,
+# git-ignored); `wrangler dev` reads it from there.
+# Production: `pnpm exec wrangler secret put <NAME>` or the Cloudflare dashboard
+# (Worker > Settings > Variables and Secrets). "Deploy to Cloudflare" asks for every
+# uncommented entry below as a secret. Details: docs/DEPLOY.md, docs/CONFIG.md.
+
+# Access token for the API (required): 32 to 256 characters of A-Z a-z 0-9 _ -, e.g. the
+# output of `openssl rand -hex 32`; open the board once as https://<worker>/?key=<token>.
+# The editor needs it. Unset, empty, shorter, other characters or still REPLACE_ME: the API
+# refuses every request (500), so the template cannot go live and the board is never public
+# by accident. A deliberately public read-only board (no editor) needs, instead of a token,
+# KIDBOARD_PUBLIC="1" (see below).
+KIDBOARD_ACCESS_TOKEN="REPLACE_ME"
+
+# Parent PIN for the editor (ADR-0013): 6 to 12 digits of your choice, not guessable: no
+# birthdays, no single repeated digit (111111), no run (123456, 654321). Unset, shorter,
+# non-digit, too easy or still REPLACE_ME = the editor stays off (the log says why) and
+# KidBoard is the read-only board. Five wrong PINs lock the editor for 15 minutes; further
+# lockouts double the time (up to 2 hours).
+# The editor also needs the access token above and the D1 database KIDBOARD_DATA, which
+# Wrangler creates on deploy.
+KIDBOARD_PARENT_PIN="REPLACE_ME"
+
+# Required: non-secret settings as one JSON document on a single line (shape:
+# config.example.json, options: docs/CONFIG.md). The template lists children only: the
+# board then shows the entries made in the editor. Google calendars are optional, see below.
+KIDBOARD_CONFIG='{"locale":"auto","timeZone":"Europe/Berlin","children":[{"id":"mia","name":"Mia","color":"#E4572E","avatar":"🦊"},{"id":"ben","name":"Ben","color":"#2E86AB","avatar":"🐻"}]}'
+
+# Optional: Google Calendar feeds (read-only), added any time later. List each calendar in
+# KIDBOARD_CONFIG, e.g. "calendars":[{"id":"kinder","kind":"events"},{"id":"essen","kind":"meals"}],
+# and set one secret CAL_<ID>_URL per calendar, where <ID> is the calendar id in upper case
+# ("kinder" -> CAL_KINDER_URL). Google Calendar: Settings > your calendar >
+# "Secret address in iCal format".
+# CAL_KINDER_URL="https://calendar.google.com/calendar/ical/REPLACE_ME/private-REPLACE_ME/basic.ics"
+# CAL_ESSEN_URL="https://calendar.google.com/calendar/ical/REPLACE_ME/private-REPLACE_ME/basic.ics"
+# Per-child calendar (id "mia" with "childId":"mia" -> CAL_MIA_URL):
+# CAL_MIA_URL="https://calendar.google.com/calendar/ical/REPLACE_ME/private-REPLACE_ME/basic.ics"
+
+# Optional: secret token of the phone feed of the editor's entries, subscribed to in Google
+# or Apple Calendar as https://<worker>/api/feed.ics?token=<token> (no access token needed; the
+# parent area shows the link). 32 to 256 characters of A-Z a-z 0-9 _ -, e.g. the output of
+# `openssl rand -hex 32`. Unset = no feed; shorter or still REPLACE_ME = no feed and a log
+# warning. Changing it ends every subscription. Needs the editor (PIN and D1).
+# KIDBOARD_FEED_TOKEN="REPLACE_ME"
+
+# Optional: public read-only board WITHOUT access token. Only the value 1 counts, and only
+# while KIDBOARD_ACCESS_TOKEN is unset: anyone with the link sees your family's calendar.
+# KIDBOARD_PUBLIC="1"
+
+# Optional: comma-separated list of allowed CORS origins (default: same origin only; the
+# Vite dev server proxies /api, so local development needs none).
+# KIDBOARD_ALLOWED_ORIGINS="http://localhost:5173"
+
+# Optional: how long fetched feeds count as fresh, in seconds (default 3600, 60-86400;
+# with the KV cache at least calendars x 86400 / 500).
+# KIDBOARD_CACHE_TTL=3600

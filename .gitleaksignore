@@ -1,0 +1,4 @@
+# Known false positives (synthetic test strings). Fingerprints: <commit>:<file>:<rule>:<line>
+4bc20ba88dd27e4739fb722ff1bb0c97c1ff6b3f:apps/worker/src/ical/expandCalendar.test.ts:generic-api-key:593
+# Pre-rewrite hash, still reachable from the old release-please branch until it is recreated.
+60e561bf335b0ad719cca83c58170b59111c6b27:apps/worker/src/ical/expandCalendar.test.ts:generic-api-key:593

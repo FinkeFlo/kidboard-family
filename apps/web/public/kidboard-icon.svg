@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- KidBoard app icon (original artwork): a smiling sun on a calendar page. -->
+  <!-- Colours are light design tokens from src/styles/tokens.css (checked by pwa/icon.test.ts). -->
+  <rect width="512" height="512" rx="112" fill="#a63a08"/>
+  <rect x="88" y="120" width="336" height="304" rx="44" fill="#fbf6ee"/>
+  <rect x="88" y="120" width="336" height="64" rx="32" fill="#f3ece1"/>
+  <rect x="160" y="84" width="36" height="76" rx="18" fill="#2b2118"/>
+  <rect x="316" y="84" width="36" height="76" rx="18" fill="#2b2118"/>
+  <g stroke="#c2410c" stroke-width="18" stroke-linecap="round">
+    <path d="M256 210v-14M256 398v14M162 304h-14M350 304h14M190 238l-10-10M322 238l10-10M190 370l-10 10M322 370l10 10"/>
+  </g>
+  <circle cx="256" cy="304" r="70" fill="#c2410c"/>
+  <circle cx="232" cy="288" r="10" fill="#ffffff"/>
+  <circle cx="280" cy="288" r="10" fill="#ffffff"/>
+  <path d="M224 322q32 28 64 0" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+</svg>

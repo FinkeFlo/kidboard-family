@@ -1,0 +1,33 @@
+name: Feature request / Funktionswunsch
+description: Suggest an idea / Eine Idee vorschlagen
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        KidBoard is read-only and icon-first for children aged about 3-8. Ideas that fit this are most welcome. / KidBoard ist nur lesend und Icon-basiert für Kinder von etwa 3-8 Jahren. Passende Ideen sind willkommen.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation / Problem / Motivation
+      description: What do you want to achieve? / Was möchtest du erreichen?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / Vorschlag
+      description: How could it work, ideally for a child who cannot read yet? / Wie könnte es funktionieren, idealerweise für ein Kind, das noch nicht lesen kann?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / Alternativen
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution / Mitarbeit
+      options:
+        - label: I would like to work on this myself. / Ich würde das gern selbst umsetzen.
